@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #7ED56F, #28B485, #3FBF4A, #6FDC7E, #37CA6F);
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #4CAF50;
+    color: #ffffff;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+  }
+  
+  li.aprovado {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #ffffff;
+  }
+  
+  li.nao-aprovado {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #ffffff;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+  }
+  
+  .button-group button {
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-group button.aprovado {
+    background-color: #4CAF50;
+    color: #ffffff;
+  }
+  
+  .button-group button.nao-aprovado {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .observacao-container {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .observacao-container h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .observacao-form {
+    margin-top: 10px;
+  }
+  
+  .observacao-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .observacao-form textarea {
+    width: calc(100% - 20px);
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .observacao-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .observacao-buttons button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #save-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #message-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-container {
+    display: flex;
+    align-items: stretch;
+    height: 10vh;
+  }
+  
+  .tab {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .text-container {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 01px;
+  }
+  
+  h2 {
+    margin-bottom: 05px;
+  }
+  
+  textarea {
+    width: calc(100% - 20px);
+    height: calc(10% - 40px);
+    border: 0.5px solid #ccc;
+    padding: 01px;
+    box-sizing: border-box;
+    font-size: 15px;
+    resize: none;
+  }
+  
